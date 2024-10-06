@@ -5,7 +5,7 @@ const withPWA = nextPWA({
   dest: 'public',
   register: true,
   skipWaiting: true,
-  // 開発用
+  // 開発用（デプロイ時は消す）
   disable: process.env.NODE_ENV === "development",
 });
 
